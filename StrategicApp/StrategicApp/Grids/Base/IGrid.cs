@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using StrategicApp.Units;
+﻿using StrategicApp.Units;
 
 namespace StrategicApp.Grids.Base
 {
-    interface IGrid
+    public interface IGrid
     {
         string GetName();
         int GetMoveCost(UnitAreaType unitAreaType);

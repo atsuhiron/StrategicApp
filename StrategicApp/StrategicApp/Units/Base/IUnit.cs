@@ -1,13 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace StrategicApp.Units.Base
+﻿namespace StrategicApp.Units.Base
 {
-    interface IUnit
+    public interface IUnit
     {
         string GetName();
-        int GetMaxMobbility();
+        string GetUniqueName();
+        string GetShortName();
+        int GetMaxMobility();
+        float GetMaxLife();
         float GetLife();
+        void SetLife(float life);
+        void SetLifeDelta(float lifeDelta);
+        bool IsNeutralized();
+        bool CanJoin(IUnit other);
     }
 }
